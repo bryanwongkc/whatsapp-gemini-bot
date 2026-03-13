@@ -62,7 +62,7 @@ app.post("/webhook", async (req, res) => {
     ].join("\n");
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.1-flash-lite",
+      model: "gemini-3.1-flash-lite-preview",
       contents: prompt
     });
 
