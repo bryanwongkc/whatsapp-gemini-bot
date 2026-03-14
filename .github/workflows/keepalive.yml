@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Render health endpoint
-        run: curl -fsS https://YOUR-RENDER-SERVICE.onrender.com/healthz
+        run: curl -fsS https://whatsapp-gemini-bot-hhnl.onrender.com/healthz
