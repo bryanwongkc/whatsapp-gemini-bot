@@ -20,6 +20,10 @@ app.get("/", (req, res) => {
   res.status(200).send("Bot is running.");
 });
 
+app.get("/healthz", (req, res) => {
+  res.status(200).json({ ok: true, uptime: process.uptime() });
+});
+
 app.get("/webhook", (req, res) => {
   const mode = req.query["hub.mode"];
   const token = req.query["hub.verify_token"];
